@@ -3,30 +3,216 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="refresh" content="0; url=./portfolio.pdf" />
-    <link rel="preload" href="./portfolio.pdf" as="document" />
-    <title>朱欣彦作品集 PDF</title>
-    <style>
-      body {
-        display: grid;
-        min-height: 100vh;
-        margin: 0;
-        place-items: center;
-        background: #f7f6f2;
-        color: #11110f;
-        font-family:
-          "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      }
-
-      a {
-        color: inherit;
-      }
-    </style>
-    <script>
-      window.location.replace("./portfolio.pdf");
-    </script>
+    <meta
+      name="description"
+      content="朱欣彦作品集：内容创意、互动体验与活动策划。"
+    />
+    <meta property="og:title" content="朱欣彦作品集 | Xinyan Zhu Portfolio" />
+    <meta
+      property="og:description"
+      content="Creative Content / Experience / Campaign"
+    />
+    <meta property="og:type" content="website" />
+    <title>朱欣彦作品集 | Xinyan Zhu Portfolio</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=20261118-5" />
+    <script src="./script.js?v=20261118-5" defer></script>
   </head>
   <body>
-    <p><a href="./portfolio.pdf">打开电子作品集 PDF</a></p>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="回到首页">XINYAN ZHU</a>
+      <p class="header-meta">Portfolio <span>/</span> 2023–2026</p>
+    </header>
+
+    <main id="top">
+      <section class="cover" aria-labelledby="cover-title">
+        <div class="cover-copy">
+          <p class="eyebrow">朱欣彦 · Xinyan Zhu</p>
+          <h1 id="cover-title">Portfolio</h1>
+          <p class="positioning">Creative Content / Experience / Campaign</p>
+          <p class="lede">
+           
+          </p>
+
+          <div class="cover-actions">
+            <a
+              class="primary-button"
+              href="./assets/portfolio1.jpg"
+              target="_blank"
+              rel="noopener"
+              data-open-portfolio
+              aria-expanded="false"
+            >
+              <span>打开作品集</span>
+            </a>
+            <a
+              class="download-link"
+              href="./assets/portfolio.pdf"
+              download
+            >
+              下载作品集
+            </a>
+          </div>
+
+          <p class="cover-note">PDF Portfolio · 21 pages · 2023–2026</p>
+        </div>
+
+        <div class="project-collage" aria-label="作品集项目预览">
+          <a
+            class="project-card project-card--content"
+            href="./assets/portfolio4.jpg"
+            target="_blank"
+            rel="noopener"
+            data-project-index="0"
+            aria-label="打开内容运营工作经历"
+          >
+            <span class="card-tag card-tag--work">WORK EXPERIENCE</span>
+            <img
+              src="./assets/work-experience.png"
+              alt="内容运营工作经历"
+            />
+            <span class="project-hover">
+              <strong>小红书官方账号运营</strong>
+              <small>Social media operations &amp; video</small>
+            </span>
+          </a>
+          <a
+            class="project-card project-card--nfc"
+            href="./assets/portfolio8.jpg"
+            target="_blank"
+            rel="noopener"
+            data-project-index="1"
+            aria-label="打开 NFC 互动体验项目"
+          >
+            <span class="card-tag card-tag--project">PROJECT</span>
+            <img src="./assets/project1.png" alt="NFC 互动体验项目" />
+            <span class="project-hover">
+              <strong>Give Me Four！<br>NFC 交互活动</strong>
+              <small>Interactive experience &amp; campaign</small>
+            </span>
+          </a>
+          <a
+            class="project-card project-card--calendar"
+            href="./assets/portfolio14.jpg"
+            target="_blank"
+            rel="noopener"
+            data-project-index="2"
+            aria-label="打开立体日历项目"
+          >
+            <span class="card-tag card-tag--project">PROJECT</span>
+            <img
+              src="./assets/project2.png"
+              alt="西湖立体日历项目"
+            />
+            <span class="project-hover">
+              <strong>《湖山岁月历》<br>  立体日历设计</strong>
+              <small>Cultural product &amp; storytelling</small>
+            </span>
+          </a>
+          <a
+            class="project-card project-card--book"
+            href="./assets/portfolio18.jpg"
+            target="_blank"
+            rel="noopener"
+            data-project-index="3"
+            aria-label="打开立体书与叙事项目"
+          >
+            <span class="card-tag card-tag--project">PROJECT</span>
+            <img
+              src="./assets/project3.png"
+              alt="《和馆长的一天》立体书项目"
+            />
+            <span class="project-hover">
+              <strong>《和馆长的一天》<br>立体书</strong>
+              <small>Personal narrative &amp; paper craft</small>
+            </span>
+          </a>
+
+          <a
+            class="more-works"
+            href="./assets/portfolio20.jpg"
+            target="_blank"
+            rel="noopener"
+            data-more-works
+            aria-label="打开更多作品"
+          >
+            <span>MORE WORKS</span>
+            <span class="more-works-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="palette-mark" aria-hidden="true">
+          <span class="swatch swatch--grey"></span>
+          <span class="swatch swatch--lilac"></span>
+          <span class="swatch swatch--blue"></span>
+          <span class="swatch swatch--green"></span>
+          <span class="swatch swatch--peach"></span>
+        </div>
+      </section>
+
+    </main>
+
+    <div
+      class="portfolio-overlay"
+      id="portfolio-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="viewer-title"
+      inert
+    >
+      <header class="overlay-bar">
+        <div class="overlay-title">
+          <p>Portfolio</p>
+          <h2 id="viewer-title">完整作品集</h2>
+        </div>
+        <div class="overlay-actions">
+          <a class="overlay-download" href="./assets/portfolio.pdf" download>
+            下载作品集
+          </a>
+          <button
+            class="overlay-close"
+            type="button"
+            data-close-portfolio
+            aria-label="收起作品集"
+          >
+            收起
+          </button>
+        </div>
+      </header>
+
+      <div class="portfolio-stage">
+        <div class="portfolio-loading" aria-live="polite">
+          <span class="spinner" aria-hidden="true"></span>
+          正在加载作品集…
+        </div>
+        <div
+          class="portfolio-reader"
+          id="portfolio-reader"
+          tabindex="0"
+          aria-label="可上下滑动的作品集"
+        >
+          <div class="portfolio-pages" id="portfolio-pages"></div>
+        </div>
+      </div>
+
+      <nav class="project-pager" aria-label="项目切换">
+        <button type="button" data-previous-project>← 上一个项目</button>
+        <span id="current-page-label">第 1 / 21 页</span>
+        <button type="button" data-next-project>下一个项目 →</button>
+      </nav>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2026 Xinyan Zhu</p>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+
+    <noscript>
+      <p class="noscript">
+        请启用 JavaScript 查看内嵌作品集，或
+        <a href="./assets/portfolio1.jpg">直接打开首页图片</a>。
+      </p>
+    </noscript>
   </body>
 </html>
